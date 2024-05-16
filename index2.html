@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+
+    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
+    <title>Document</title>
+
+    <script type="text/JavaScript">
+        AOS.init();
+        function clickBtn() {
+            var pic = document.getElementById("img11");
+            pic.src= "images/pic-3.jpg";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop1").appendChild(pic);    
+            
+            var pic =document.getElementById("img12");
+            pic.src ="images/pic-6.avif";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop2").appendChild(pic); 
+
+            var pic =document.getElementById("img13");
+            pic.src ="images/pic-7.avif";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop3").appendChild(pic); 
+        }
+        function clickBtn1() {
+            var pic = document.getElementById("img11");
+            pic.src= "images/pic-1.jpg";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop1").appendChild(pic);    
+            
+            var pic =document.getElementById("img12");
+            pic.src ="images/pic-5.avif";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop2").appendChild(pic); 
+
+            var pic =document.getElementById("img13");
+            pic.src ="images/pic-2.jpg";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop3").appendChild(pic); 
+        }
+        function clickBtn2() {
+            var pic = document.getElementById("img11");
+            pic.src= "images/pic-3.jpg";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop1").appendChild(pic);    
+            
+            var pic =document.getElementById("img12");
+            pic.src ="images/pic-6.avif";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop2").appendChild(pic); 
+
+            var pic =document.getElementById("img13");
+            pic.src ="images/pic-7.avif";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgTop3").appendChild(pic); 
+        }
+
+        function handleClick(){
+
+            var pic = document.getElementById("img17");
+            pic.src= "images/pic-3.jpg";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgLast1").appendChild(pic);    
+            
+            var pic =document.getElementById("img18");
+            pic.src ="images/pic-6.avif";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgLast2").appendChild(pic); 
+
+            var pic =document.getElementById("img19");
+            pic.src ="images/pic-7.avif";
+            pic.width ="300"; 
+            pic.height= "300";
+            document.getElementById("imgLast3").appendChild(pic); 
+        }
+
+    </script>
+</head>
+<body>
+    <section class="nb">
+        <div class="container-fluid">
+            <nav class="navbar  navbar-light navbar-expand-lg  bg-light w-100">
+                <img src="images/icon.png" width="70" height="70"/>
+               <!-- <a class="navbar-brand" href="index.html" style="font-size: 30px;font-weight: bold;">VILLA</a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="collapsingNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index2.html">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="property.html">Property Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="property.html"><button class="btn1" id="btn-dark">Schedule a Visit</button></a>
+                </div>
+            </nav>
+        </div>
+    </section>
+   
+    <section class="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="home"><h4>HOME/PROPERTIES</h4></div>
+                    <div class="prop"><h2>Properties</h2></div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   <div class="btns d-flex justify-content-around">
+                        <button class="btn btn-dark active" onclick="clickBtn">SHOW ALL</button>
+                        <button class="btn btn-dark" onclick="clickBtn1()">APARTMENTS</button>
+                        <button class="btn btn-dark" onclick="clickBtn1()">VILLAS</button>
+                        <button class="btn btn-dark" onclick="clickBtn2()">PENTHOUSE</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-3 mt-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="flip-right" class="card-img-top" id="imgTop1">
+                                <img src="images/pic-2.jpg" id="img11" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="flip-up" class="card-img-top" id="imgTop2">
+                                <img src="images/pic-3.jpg" id="img12" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="flip-left" class="card-img-top" id="imgTop3">
+                                <img  src="images/pic-4.avif" id="img13" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="fade-left" class="card-img-top" id="imgTop4">
+                                <img src="images/pic-5.avif" id="img14" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="fade-up" class="card-img-top">
+                                <img src="images/pic-6.avif" id="img15" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="fade-right" class="card-img-top">
+                                <img src="images/pic-7.avif" id="img16" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="zoom-in" class="card-img-top" id="imgLast1">
+                                <img src="images/pic-4.avif" id="img17" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="zoom-in" class="card-img-top" id="imgLast2">
+                                <img src="images/pic-3.jpg" id="img18" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <div data-aos="zoom-in" class="card-img-top" id="imgLast3">
+                                <img src="images/pic-2.jpg" id="img19" width="300" height="300" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="rate d-flex justify-content-between">
+                                <div class="luxury">Luxury Villa</div>
+                                <div class="rate">&#8377; 1.2Cr</div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: bold;margin-top: 10px;">181 New Street Miami Or 18742</div>
+                            <div style="margin-top: 15px;">Bathrooms: <b>8</b>&nbsp;&nbsp;&nbsp; Bedrooms: <b>8</b></div>
+                            <div style="margin-top: 15px;">Area: <b>552m2</b>&nbsp;&nbsp; Floors: <b>3</b>&nbsp;&nbsp; Parking: <b>5 spots</b></div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="property.html"><button class="btn btn-dark">Schedule a Visit</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination p-3 m-5 justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true" style="font-size: 20px;">&laquo;</span>
+                      <span class="sr-only" >Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" style="font-size: 20px;">1</a></li>
+                  <li class="page-item"><a class="page-link" onclick="handleClick1()" style="font-size: 20px;">2</a></li>
+                  <li class="page-item"><a class="page-link"  onclick="handleClick()" style="font-size: 20px;">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true" style="font-size: 20px;">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </section>
+    <section class="section-4 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="copy">
+                    <h4 style="color: white;text-align: center;margin: 30px;margin-left: 233px;font-size: 20px;">Copyright &copy; 2048 Villa Agency Co., Ltd. All rights reserved. Design: TemplateMo</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration:1000,
+        });
+    </script>
+</body>
+</html>
