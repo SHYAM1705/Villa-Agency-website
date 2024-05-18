@@ -258,7 +258,7 @@ h3 {
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 270em;
+    top: 274em;
     right: 38em;
 }
 .contact{
@@ -274,7 +274,7 @@ form {
     width: 100%;
     height: 78vh;
     position: absolute;
-    top: -17.5em;
+    top: -12.5em;
     right: -33em;
     background-color: white;
 }
